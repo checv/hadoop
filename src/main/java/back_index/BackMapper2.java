@@ -11,5 +11,6 @@ public class BackMapper2 extends Mapper<LongWritable, Text, Text, Text> {
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] name_count = value.toString().split("\t");
         String[] file_word = name_count[0].split("-");
+
     }
 }
