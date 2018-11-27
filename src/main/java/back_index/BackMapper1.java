@@ -18,7 +18,7 @@ public class BackMapper1 extends Mapper<LongWritable, Text, Text, IntWritable> {
 
     @Override
     protected void setup(Context context) throws IOException, InterruptedException {
-        name = ((FileSplit)context.getInputSplit()).getPath().getName();
+        name = ((FileSplit) context.getInputSplit()).getPath().getName();
     }
 
 
